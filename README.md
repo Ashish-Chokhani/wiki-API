@@ -77,16 +77,17 @@ wiki-API
 
    - DELETE: Delete all articles.
 
-    ```bash
-    curl -X DELETE http://localhost:3000/articles
-    ```
+        ```bash
+        curl -X DELETE http://localhost:3000/articles
+        ```
 
 - /articles/
+  
    - GET: Retrieve a specific article by title.
 
-    ```bash
-    curl http://localhost:3000/articles/Article%20Title
-    ```
+        ```bash
+        curl http://localhost:3000/articles/Article%20Title
+        ```
 
   - PUT: Update a specific article by title.
 
