@@ -106,3 +106,6 @@ wiki-API
     ```bash
     curl -X DELETE http://localhost:3000/articles/Article%20Title
     ```
+
+## Contribution
+We welcome contributions! Feel free to fork the repository, make changes, and submit a pull request.
