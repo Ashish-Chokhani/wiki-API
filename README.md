@@ -65,9 +65,9 @@ wiki-API
 - /articles
   - GET: Retrieve all articles.
 
-``` bash
-curl http://localhost:3000/articles
-```
+    ``` bash
+    curl http://localhost:3000/articles
+    ```
 
   - POST: Create a new article.
 
