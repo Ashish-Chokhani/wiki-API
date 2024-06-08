@@ -71,33 +71,37 @@ wiki-API
 
   - POST: Create a new article.
 
-```bash
-curl -X POST -H "Content-Type: application/x-www-form-urlencoded" -d "title=Article Title&content=Article Content" http://localhost:3000/articles
-```
+    ```bash
+    curl -X POST -H "Content-Type: application/x-www-form-urlencoded" -d "title=Article Title&content=Article Content" http://localhost:3000/articles
+    ```
 
    - DELETE: Delete all articles.
 
-bash
-Copy code
-curl -X DELETE http://localhost:3000/articles
-/articles/
-GET: Retrieve a specific article by title.
+    ```bash
+    curl -X DELETE http://localhost:3000/articles
+    ```
 
-bash
-Copy code
-curl http://localhost:3000/articles/Article%20Title
-PUT: Update a specific article by title.
+- /articles/
+   - GET: Retrieve a specific article by title.
 
-bash
-Copy code
-curl -X PUT -H "Content-Type: application/x-www-form-urlencoded" -d "title=New Title&content=New Content" http://localhost:3000/articles/Article%20Title
-PATCH: Update a specific field of an article by title.
+    ```bash
+    curl http://localhost:3000/articles/Article%20Title
+    ```
 
-bash
-Copy code
-curl -X PATCH -H "Content-Type: application/x-www-form-urlencoded" -d "content=Updated Content" http://localhost:3000/articles/Article%20Title
-DELETE: Delete a specific article by title.
+  - PUT: Update a specific article by title.
 
-bash
-Copy code
-curl -X DELETE http://localhost:3000/articles/Article%20Title
+    ```bash
+    curl -X PUT -H "Content-Type: application/x-www-form-urlencoded" -d "title=New Title&content=New Content" http://localhost:3000/articles/Article%20Title
+    ```
+    
+  - PATCH: Update a specific field of an article by title.
+
+    ```bash
+    curl -X PATCH -H "Content-Type: application/x-www-form-urlencoded" -d "content=Updated Content" http://localhost:3000/articles/Article%20Title
+    ```
+
+  - DELETE: Delete a specific article by title.
+
+    ```bash
+    curl -X DELETE http://localhost:3000/articles/Article%20Title
+    ```
